@@ -1,10 +1,17 @@
-# MAT Stack Starter Kit
-This is a setup for very simple apps using Alpine for Javascript and TailwindCSS for the css.
+# ATAM Stack Starter Kit
+This is a setup for very simple apps using Alpine for Javascript, TailwindCSS for the css, and then whatever APIs as you go usually with Cloudflare Workers to keep prying eyes away from our secrets.
+
+## Requirements
+1. Node
+2. Laravel Valet
+
+## Why would you do this?
+Well, I'm just used to Valet. Then Mix seemed really easy to get my head around. Love working with Alpine and Tailwind, so it just made sense to smash it all together to build tiny little hobby things.
 
 ## Setup
-The site must be registered with Valet ***AND*** secured with a TLS. This will allow Browsersync to easily sync the site and not throw any nasty security errors.
+Put this into a folder. Register that folder with Laravel Valet using whatever name you want. Run `valet secure` to give that bad boy a SSL cert. This will allow Browsersync to easily sync the site and not throw any nasty security errors.
 
-Be sure to update the domain name in `webpack.mix.js`, otherwise it's not going to work.
+Update the domain name in `webpack.mix.js`, otherwise it's not going to work. Also, if you're on an older (or newer) version of MacOS, you may need to adjust the location of the SSL certificate files.
 
 The `package.json` could be updated as well, if you care.
 
