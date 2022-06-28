@@ -15,6 +15,10 @@ Update the domain name in `webpack.mix.js`, otherwise it's not going to work. Al
 
 The `package.json` could be updated as well, if you care.
 
+Run `npm install`.
+
+Get to work!
+
 ## SRC Folder
 This folder contains all JS and CSS. When `watch` or `dev` are run, they will compile to respective paths in `/public`.
 
